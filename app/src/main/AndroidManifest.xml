@@ -13,14 +13,9 @@
         android:theme="@style/Theme.GeoQuiz"
         tools:targetApi="31">
         <activity
-            android:name=".activity_quiz"
-            android:exported="false"
-            android:label="@string/title_activity_quiz"
-            android:theme="@style/Theme.GeoQuiz" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".QuizActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_quiz"
             android:theme="@style/Theme.GeoQuiz">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,8 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>
